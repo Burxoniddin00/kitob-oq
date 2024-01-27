@@ -6,8 +6,6 @@ import { useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { usePathname } from "next/navigation";
 import { Loading } from "@/components/loading/lading";
-import Image from "next/image";
-import log from "./logo.jpg";
 const Headers = () => {
   const [toggleState, setToggleState] = useState(1);
   const [step, setStep] = useState(true);
@@ -91,7 +89,7 @@ const Headers = () => {
               className="hidden w-full md:block md:w-auto"
               id="navbar-default"
             >
-              <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <ul className=" font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li onClick={() => toggleTab(1)}>
                   <Link
                     href={"/"}
@@ -145,7 +143,7 @@ const Headers = () => {
         className={
           f
             ? "hidden"
-            : "w-[200px]  absolute top-0 z-[99] font-medium h-[100vh]  flex flex-col p-4 md:p-0   border-gray-100  bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 "
+            : "w-[70%]  absolute top-0 z-[99] font-medium h-[100vh]  flex flex-col p-4 md:p-0   border-gray-100  bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 "
         }
       >
         <li className="text-2xl text-white mb-9 " onClick={() => navOff()}>
