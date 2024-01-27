@@ -86,7 +86,7 @@ const Page = () => {
             })
               .then((res) => res.json())
               .then((data) => {
-                if (data.statsu !== 201) {
+                if (data.status !== 201) {
                   toast.error(data.message);
                 } else {
                   setShowModal(false);
@@ -114,7 +114,7 @@ const Page = () => {
           })
             .then((res) => res.json())
             .then((data) => {
-              if (data.statsu !== 201) {
+              if (data.status !== 201) {
                 toast.error(data.message);
               } else {
                 setShowModal(false);

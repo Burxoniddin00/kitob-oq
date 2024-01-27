@@ -137,7 +137,7 @@ const Page = () => {
                     {e.Name} {e.LastName}
                   </h2>
                 </div>
-                <p>{e.booksPage}</p>
+                <p>{e.booksPage} bet</p>
               </li>
             </ol>
           ))

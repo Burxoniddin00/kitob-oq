@@ -52,7 +52,11 @@ const AddBokks = () => {
     }
     if (token) {
       fetch(`${API}users`, {
-        headers: { token },
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "Bearer YOUR_ACCESS_TOKEN", 
+          token,
+        },
         method: "GET",
       })
         .then((res) => res.json())
@@ -63,7 +67,8 @@ const AddBokks = () => {
           } else {
             setUsers(data.users[0]._id);
           }
-        });
+        })
+        .catch((e) => console.log(e));
     } else {
       routers.push("/login");
     }
@@ -71,7 +76,7 @@ const AddBokks = () => {
       setT(true);
     }
     setTt(false);
-  }, [routers,data]);
+  }, [routers]);
 
   const editBook = (id) => {
     let resp = data.filter((e) => e._id == id);
@@ -153,7 +158,6 @@ const AddBokks = () => {
         text.value = "";
         number.value = "";
         comment.value = "";
-     
       } else {
         routers.push("/login");
       }
