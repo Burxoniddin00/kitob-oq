@@ -59,9 +59,9 @@ const Headers = () => {
   return (
     <>
       <Loading setTrue={t} />
-      <div className="sticky top-0 z-[98] dark:bg-gray-900 ">
-        <nav className="bg-white  dark:bg-gray-900">
-          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="sticky top-0 z-[98] w-full dark:bg-gray-900 ">
+        <nav className="bg-white  container px-5 m-auto  dark:bg-gray-900">
+          <div className=" flex  items-center justify-between mx-auto py-4">
             <button
               onClick={() => navOn()}
               className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
