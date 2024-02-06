@@ -143,7 +143,7 @@ const Headers = () => {
         className={
           f
             ? "hidden"
-            : "w-[50%]  absolute top-0 z-[99] font-medium h-[100vh]  flex flex-col p-4 md:p-0   border-gray-100  bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 "
+            : "w-[70%]  absolute top-0 z-[99] font-medium h-[100vh]  flex flex-col p-4 md:p-0   border-gray-100  bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 "
         }
       >
         <li className="text-2xl text-white mb-9 " onClick={() => navOff()}>
